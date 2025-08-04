@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Café - Job Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      filter: brightness(0.6);
+      z-index: -1;
+    }
+
+    .logo {
+      width: 100px;
+      margin: 20px auto 10px;
+      display: block;
+      opacity: 0.95;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #f0f0f0;
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 10px 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    .button-container {
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1rem;
+      background-color: #0070d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #005bb5;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .btn {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- ✅ New Logo (Coffee cup with tie) -->
+    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Career Café Logo" class="logo" />
+
+    <!-- Main Content -->
+    <main>
+      <h1>Welcome to Career Café</h1>
+      <p>A dedicated platform for managing Salesforce job opportunities</p>
+      <div class="button-container">
+        <a href="login.html" class="btn">Login</a>
+        <a href="register.html" class="btn">Join Now</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Career Café. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
